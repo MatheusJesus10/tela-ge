@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: #06AA48;
+    color: white;
+    padding: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.237);
+    justify-content: flex-start;
+}
+
+header > nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+header > nav > a {
+    font-size: 1em;
+    background-color: #06AA48;
+    color: white;
+    padding: 6px;
+    margin: 0px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: #057a34c4;
+    border-radius: 10px;
+    transition: background-color .3s;
+}
+
+body {
+    font-size: 1em;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+    justify-content: center; /* Centraliza no meio da tela */
+    align-items: center;
+    height: 80vh; /* Ajusta a altura do container */
+}
+
+
+.principal {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px; /* Espaço entre os elementos */
+    max-width: 900px;
+}
+
+.container-noticias {
+    flex: 2; /* Ocupa mais espaço */
+}
+
+.noticias-secundarias {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espaço entre as imagens menores */
+    flex: 2; /* Ocupa menos espaço */
+}
+
+/* Ajuste das imagens */
+.container-noticias img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.noticias-secundarias img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.titulo {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+
+footer {
+    background-color: #06AA48;
+    color: white;
+    padding: 50px 70px 0px 70px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+}
+
+footer > h1 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.237);
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+footer > nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+footer > nav > a {
+    font-size: .7em;
+    background-color: #06AA48;
+    color: white;
+    padding: 6px;
+    margin: 0px;
+    text-decoration: none;
+    text-align: center;
+}
